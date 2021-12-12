@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("images/layered-waves-haikei -login.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+.container {
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+  position: relative;
+  align-content: left;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0px 14px 28px rgba(0, 0, 0, .25),
+  0px 10px 10px rgba(0, 0, 0, .22);
+}
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 50%;
+  z-index: 1;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+form h1 {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+#registro {
+  color: white;
+  font-size: 14px;
+  margin-top: 25px;
+} 
+form button {
+  margin-top: 50px;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  background: linear-gradient(45deg, rgba(99, 188, 229, 1), rgba(99, 188, 229, 1), rgba(75, 172, 63, 1), rgba(75, 172, 63, 1));
+  background-size: 300% 100%;
+  background-position: 50%;
+  border: 0;
+  border-radius: 20px;
+  padding: 12px 45px;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+button:hover{
+    animation: gradient 0.5s forwards;
+}
+@keyframes gradient {
+  0% {
+    background-position: 50%
+  }
+  100% {
+    background-position: 99%
+  }
+    }
+input {
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  padding: 12px 15px;
+  width: 100%;
+  box-shadow: 0px 14px 28px rgba(0, 0, 0, .25),
+  0px 10px 10px rgba(0, 0, 0, .22);
+}
+#password {
+  margin-top: 25px;
+}
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.overlay {
+  background-image: url(images/login_portada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0px;
+  position: relative;
+  height: 100%;
+}
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+#welcome1 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  opacity: 0.9;
+}
+#welcome2 {
+  letter-spacing: 5px;
+  margin-top: -10px;
+}
+#welcome2 a {
+  text-decoration: none;
+}
+#welcome2 {
+  background: -webkit-linear-gradient(45deg, rgba(99, 188, 229, 1), rgba(99, 188, 229, 1), rgba(75, 172, 63, 1), rgba(75, 172, 63, 1));
+  background-size: 300% 100%;
+  background-position: 50%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 14px 28px rgba(0, 0, 0, .25),
+  0px 10px 10px rgba(0, 0, 0, .22);
+  font-size: 60px;
+}
+#welcome2:hover {
+  animation: gradient 0.5s forwards;
+}
+.alert {
+  margin-top: 25px;
+}
